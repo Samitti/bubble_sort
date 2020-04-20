@@ -14,14 +14,10 @@ puts bubble_sort([4, 3, 78, 2, 0, 2])
 
 def sort_bubble(array)
   array.each do
-     (array.length - 1).times do |num|
-        if yield(array[num], array[num + 1]).positive?
-        array[num], array[num + 1] = array[num + 1], array[num]
-        end
-      end
-   end
-  array
+    (array.length - 1).times do |num|
+      array[num], array[num + 1] = array[num + 1], array[num] if yield(array[num], array[num + 1]).positive?
+    end
   end
-  puts sort_bubble (%w[hello hi hey]) {|right, left| right.length - left.length}
-
-  
+  array
+end
+puts sort_bubble(%w[hello hi hey]) { |right, left| right.length - left.length }
