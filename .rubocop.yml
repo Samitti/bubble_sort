@@ -42,8 +42,7 @@ Lint/RaiseException:
 Lint/StructNewOverride:
   Enabled: false
 
-Layout/SpaceAroundMethodCallOperator:
-  Enabled: false
+
 Layout/HashAlignment:
   EnforcedColonStyle: key
 Layout/ExtraSpacing:
