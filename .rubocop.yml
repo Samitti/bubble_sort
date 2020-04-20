@@ -30,8 +30,6 @@ Style/DefWithParentheses:
   Enabled: false
 Style/FrozenStringLiteralComment:
   EnforcedStyle: never
-Style/ExponentialNotation:
-  Enabled: false
 Style/HashEachMethods:
   Enabled: false
 Style/HashTransformKeys:
