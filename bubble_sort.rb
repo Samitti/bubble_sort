@@ -11,4 +11,17 @@ def bubble_sort(arr)
     arr
   end
   puts bubble_sort([4, 3, 78, 2, 0, 2])
+
+  def sort_bubble(array)
+    count = 0
+    array.each do
+        for num in(0...array.length-1)
+          if yield(array[num], array[num+1]).positive?
+            array[num], array[num+1] = array[num+1],array[num]              
+          end
+        end     
+    end
+   array
+  end
+  puts sort_bubble(["hello", "hi", "hey"]){|right, left| right.length - left.length}
   
