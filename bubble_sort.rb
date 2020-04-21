@@ -10,7 +10,6 @@ def bubble_sort(arr)
   end
   arr
 end
-puts bubble_sort([4, 3, 78, 2, 0, 2])
 
 def sort_bubble_by(array)
   array.each do
@@ -20,4 +19,3 @@ def sort_bubble_by(array)
   end
   array
 end
-puts sort_bubble(%w[hello hi hey]) { |right, left| right.length - left.length }
